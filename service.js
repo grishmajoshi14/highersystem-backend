@@ -1,5 +1,5 @@
 const express = require('express');
-const pool = require('../config/postgres');
+const pool = require('./config/postgres');
 const router = express.Router();
 
 // Create a new service request
