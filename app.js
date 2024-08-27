@@ -3,14 +3,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const signup = require('./routes/signup');
-const service = require('./routes/service');
+
+const service = require('./service');
 
 const app = express();
 app.use(bodyParser.json());
 
 // Use the routes
-app.use('/api/signup', signup);
+
 app.use('/api/service-requests', service);
 
 // Start the server
